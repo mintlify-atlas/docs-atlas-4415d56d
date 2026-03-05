@@ -1,0 +1,82 @@
+{
+  "projectType": "api-service",
+  "projectName": "WhatsApp Clone Backend",
+  "projectDescription": "Spring Boot REST API for a real-time messaging application with OAuth2 authentication and hexagonal architecture",
+  "theme": "aspen",
+  "primaryColor": "#040404",
+  "lightColor": "#b95676",
+  "darkColor": "#aeae95",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "prerequisites"
+            ]
+          },
+          {
+            "group": "Architecture",
+            "pages": [
+              "architecture/hexagonal-architecture",
+              "architecture/domain-model",
+              "architecture/project-structure"
+            ]
+          },
+          {
+            "group": "Authentication",
+            "pages": [
+              "authentication/oauth2-setup",
+              "authentication/keycloak-configuration",
+              "authentication/security"
+            ]
+          },
+          {
+            "group": "Deployment",
+            "pages": [
+              "deployment/local-development",
+              "deployment/docker-setup",
+              "deployment/database-configuration"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Endpoints",
+            "pages": [
+              "api-reference/overview",
+              "api-reference/users",
+              "api-reference/conversations",
+              "api-reference/messages"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Real-time messaging with file attachments (images, videos, documents)",
+    "Conversation management with pagination and notifications",
+    "OAuth2 authentication and authorization with Keycloak",
+    "Hexagonal architecture for clean separation of concerns",
+    "RESTful API with Spring Boot 3 and Java 21"
+  ],
+  "publicApiSurface": [
+    "GET /api/conversations - Get all conversations for authenticated user",
+    "POST /api/conversations - Create a new conversation",
+    "DELETE /api/conversations - Delete a conversation by ID",
+    "GET /api/conversations/get-one-by-public-id - Get conversation by ID",
+    "POST /api/conversations/mark-as-read - Mark conversation as read",
+    "POST /api/messages/send - Send a message with optional file attachment",
+    "GET /api/users/get-authenticated-user - Get authenticated user details",
+    "GET /api/users/search - Search users by query",
+    "GET /api/users/get-last-seen - Get user's last seen timestamp"
+  ]
+}
